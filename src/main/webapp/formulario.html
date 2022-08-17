@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<link
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!--  Lo siguiente es crear un Servlet que reciba la petición en /login que es la dirección indicada
+	 en el atributo ACTION de la etiqueta <form> de login.html -->
+	 
+	 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Login with HTTPSession using JSP & Servlet. </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+
+    <span class="navbar-text">
+     Logica para acceder... El texto escrito en "Nombre" debe ser el mismo que en "Password". 
+    </span>
+  </div>
+</nav>
+	 
+
+		 <!--  FORMULARIO DE LOGIN -->
+	<form  action="login" method="POST">
+	 <div class="form-group form-control-lg">
+		<label>Nombre</label>
+		<input type="text" class="form-control" name="nombre"/><br>
+		<label>Password</label>
+		<input type="password" class="form-control mb-2" name="password"/><br>
+		<input type="submit" class="btn btn-dark" value="login"/>
+		</div>
+		
+		
+	</form>
+	
+	
+	
+</body>
+</html>
